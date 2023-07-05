@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Rubik+Moonrocks&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-   <title>Proyecto|Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Proyecto|Portfolio</title>
+    <script src="app.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light">
@@ -25,13 +27,13 @@
       </a>
       <ul class="navbar-nav d-flex justify-content-center align-center">
         <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">Sobre mi</a>
+          <a class="nav-link " aria-current="page" href="#Sobre-miii">Sobre mi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Proyectos</a>
+          <a class="nav-link" href="#proyectooo">Proyectos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link" href="#contactooo">Contacto</a>
         </li>
       </ul>
      </div>
@@ -48,7 +50,7 @@
       </div>
     </section>
     <!-- SOBRE MI -->
-    <section class="sobre-mi seccion-oscura">
+    <section id="Sobre-miii" class="sobre-mi justify-content-center d-flex flex-column align-items-center seccion-oscura">
       <!-- DESCRIPCION -->
       <div class="contenedor  ">
         <h2 class="titulo">Conoce a Lamarre Patrice</h2>
@@ -58,24 +60,111 @@
           Hablo Español, Frances, Ingles y Portugues comercial. Soy una persona proactiva, me gusta 
           trabajar en equipo. Como pasa tiempo me gusta mucho jugar al Ajedrez y escuchar musica.</p>
       </div>
-      <div>
-        <!--<div class="justify-content-center d-flex flex-column align-items-center">
-          <i class="bi bi-laptop"></i> <!--ICONO DE BOOTSTRAP--
+    </section>
+    <!-- EXPERIENCIA-->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="justify-content-center d-flex flex-column align-items-center">
+          <i class="bi bi-laptop"></i> <!--ICONO DE BOOTSTRAP-->
             <p class="experiencia-titulo">Estudiante</p>
             <p>Graduado como Analista en Organizacion en Diciembre 2022, tengo el certificado de 
                 ArgentinaPrograma primera etapa, estoy estudiando para perfeccionarme como desarrollador frontEnd 
                 y backEnd.
             </p>
             <div class="badges-contenedor">
-                <span class="badge text-bg-primary">Desarrollo Web</span> <!--aGREGO DE BADGE UTILIZANDO BOOTSTRAP--
+                <span class="badge text-bg-primary">Desarrollo Web</span> <!--aGREGO DE BADGE UTILIZANDO BOOTSTRAP-->
                 <span class="badge text-bg-primary">Python</span>
                 <span class="badge text-bg-primary">#C</span>
                 <span class="badge text-bg-primary">Base de Datos</span>
 
             </div>
-        </div>-->
+        </div>
       </div>
     </section>
+    <!-- SECCION PROYECTO -->
+    <section id="proyectooo" class="proyecto-recientes seccion-oscura d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Proyecto</h2>
+      <h3 class="seccion-descripcion">Este es mi proyecto de portafolio que he creado recientemente</h3>
+      <!--GALERIA DE PROYECTOS-->
+      <div class="container text-center proyectos-contenedor">
+          <div class="row">
+              <!-- PROYECTO 1 -->
+              <div class="columna col-12 col-md-12">
+                  <div class="proyecto">
+                      <img class="proyectoo img-fluid" src="image/project_foto.jfif" alt="proyecto1">
+                      <div class="overlay"> <!--OVERLAY ES PARA AGREGAR INFORMACION ADICIONAL SOBRE EL IMAGEN-->
+                          <p>Proyecto</p>
+                          <div class="iconos-contenedor">
+                              <a href="https://github.com/krabdoble/MiPortfoliofrontend" target="_blank" rel="noopener noreferrer">
+                                  <i class="bi bi-github"></i>
+                              </a>
+                              <a href="file:///C:/Users/Usuario/Desktop/PORTFOLIO%202023%20LAMARRE%20PATRICE/MiPortfoliofrontend/index.html#"  target="_blank" rel="noopener noreferrer">
+                                  <i class="bi bi-laptop"></i> 
+
+                              </a>
+
+                          </div>
+                      </div>
+
+                  </div>
+
+              </div>
+    </section>
+     <!-- SECCION DE CONTACTO -->
+    <section id="contactooo" class="contacto seccion-oscura">
+       <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+            <div class="row">
+                <div class="col-12 col-md-4 seccion-titulo">
+                    ¡Hablemos!
+                </div>
+                <div class="col-12 col-md-4 decripcion">
+                    Contactame para iniciar tu proyecto de desarrollo web y hare que tu vision se vuelva realidad
+                </div>
+                <div class="col-12 col-md-4">
+                    <a href="mailto:patricelamarre@yahoo.fr">
+                        <button type="button">
+                            Contacto
+                            <i class="bi bi-envelope-check-fill"></i>
+                        </button>
+
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+       </div> 
+
+    </section>
+    <!-- SECCION PIE DE PAGINA(FOOTER) Y REDES SOCIALES-->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img  class="footer-logo rounded-circle" src="image/fotoPat.jpeg" alt="Logo del portafolio">
+        <p class="footer-texto text-center">Aprendo y creo todos los dias.<br>Creemos un proyecto juntos</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/krabdoble/MiPortfoliofrontend" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.facebook.com/patrice.lamarre.357" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="mailto:patricelamarre@yahoo.fr" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i>
+            </a>
+            
+
+        </div>
+        <div class="derecho-de-autor">Creado por Lamarre Patrice (2023) &#169;</div>
+
+    </footer>
+
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
 </body>
 </html>
